@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>An experiment with AngularJS and BaconJS</title>
+    <script src="vendor/bacon/dist/Bacon.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="app/angular-bacon-bridge.js"></script>
+    <script src="app/main.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="MainController">
+        <button ng-click="dec()">-1</button>
+        <span id="value">{{ value }}</span>
+        <button ng-click="inc()">+1</button>
+        <input type="text" ng-model="message"/>
+        <span>{{ text }}</span>
+        <div>{{ letter }}</div>
+    </div>
+</body>
+</html>
